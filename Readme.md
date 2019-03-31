@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Швецова](https://up.htmlacademy.ru/adaptive/16/user/548815).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Шевченко](https://up.htmlacademy.ru/adaptive/16/user/125164).
 
 ---
 
