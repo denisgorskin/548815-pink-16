@@ -35,7 +35,9 @@
         <h2 class="visually-hidden">Последние выложенные фотографии</h2>
         <ul class="photos__list">
           <li class="photos__item photo-container">
-            <img src="#" alt="Троллей на возвышенности." class="photo-container__photo photo-container__photo--panorama">
+            <a href="#">
+              <img src="#" alt="Троллей на возвышенности." class="photo-container__photo photo-container__photo--panorama">
+            </a>
             <p class="photo-container__author-field">
               <b class="photo-container__author-name">Анна</b>
               <i class="photo-container__author-activity">(5 минут назад)</i>
@@ -44,7 +46,9 @@
             <p class="photo-container__likes">Нравится: 215</p>
           </li>
           <li class="photos__item photo-container">
-            <img src="#" alt="Штатиф на фоне припаркованного автомобиля." class="photo-container__photo">
+            <a href="#">
+              <img src="#" alt="Штатиф на фоне припаркованного автомобиля." class="photo-container__photo">
+            </a>
             <p class="photo-container__author-field">
               <b class="photo-container__author-name">Левон</b>
               <i class="photo-container__author-activity">(5 часов назад)</i>
@@ -53,7 +57,9 @@
             <p class="photo-container__likes">Нравится: 356</p>
           </li>
           <li class="photos__item photo-container">
-            <img src="#" alt="Барабанная установка." class="photo-container__photo">
+            <a href="#">
+              <img src="#" alt="Барабанная установка." class="photo-container__photo">
+            </a>
             <p class="photo-container__author-field">
               <b class="photo-container__author-name">Антон</b>
               <i class="photo-container__author-activity">(12 часов назад)</i>
@@ -62,7 +68,9 @@
             <p class="photo-container__likes">Нравится: 666</p>
           </li>
           <li class="photos__item photo-container">
-            <img src="#" alt="Прозрачная крыша в высотном стеклянном здании." class="photo-container__photo">
+            <a href="#">
+              <img src="#" alt="Прозрачная крыша в высотном стеклянном здании." class="photo-container__photo">
+            </a>
             <p class="photo-container__author-field">
               <b class="photo-container__author-name">Борис</b>
               <i class="photo-container__author-activity">(20 часов назад)</i>
@@ -71,7 +79,9 @@
             <p class="photo-container__likes">Нравится: 215</p>
           </li>
           <li class="photos__item photo-container">
-            <img src="#" alt="Овощной рынок под кровлей." class="photo-container__photo">
+            <a href="#">
+              <img src="#" alt="Овощной рынок под кровлей." class="photo-container__photo">
+            </a>
             <p class="photo-container__author-field">
               <b class="photo-container__author-name">Сергей</b>
               <i class="photo-container__author-activity">(25 часов назад)</i>
@@ -80,7 +90,9 @@
             <p class="photo-container__likes">Нравится: 4</p>
           </li>
           <li class="photos__item photo-container">
-            <img src="#" alt="Ноги, свисающие с травянистого склона." class="photo-container__photo">
+            <a href="#">
+              <img src="#" alt="Ноги, свисающие с травянистого склона." class="photo-container__photo">
+            </a>
             <p class="photo-container__author-field">
               <b class="photo-container__author-name">Максим</b>
               <i class="photo-container__author-activity">(25 часов назад)</i>
@@ -89,7 +101,9 @@
             <p class="photo-container__likes">Нравится: 150</p>
           </li>
           <li class="photos__item photo-container">
-            <img src="#" alt="Вид из иллюминатора на крыло самолёта на фоне заката." class="photo-container__photo">
+            <a href="#">
+              <img src="#" alt="Вид из иллюминатора на крыло самолёта на фоне заката." class="photo-container__photo">
+            </a>
             <p class="photo-container__author-field">
               <b class="photo-container__author-name">Надежда</b>
               <i class="photo-container__author-activity">(45 часов назад)</i>
@@ -98,6 +112,45 @@
             <p class="photo-container__likes">Нравится: 2560</p>
           </li>
         </ul>
+      </section>
+
+      <section class="user-photo">
+        <h2 class="visually-hidden">Выложить своё фото</h2>
+        <img src="#" alt="Заснеженная автодорога посреди леса." class="user-photo__image">
+        <div class="user-photo__actions actions">
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <ul class="actions__list">
+              <li class="actions__item">
+                <label for="range-crop" class="visually-hidden">Обрезать</label>
+                <input class="visually-hidden" type="range" name="range-crop" id="range-crop" min="0" max="100" step="1">
+                <div class="actions__range">
+                <!-- Тут будет бегунок на CSS -->
+                </div>
+              </li>
+              <li class="actions__item">
+                <label for="range-fill" class="visually-hidden">Выполнить заливку</label>
+                <input class="visually-hidden" type="range" name="range-fill" id="range-fill" min="0" max="100" step="1">
+                <div class="actions__range">
+                <!-- Тут будет бегунок на CSS -->
+                </div>
+              </li>
+              <li class="actions__item">
+                <label for="range-contrast" class="visually-hidden">Изменить контраст</label>
+                <input class="visually-hidden" type="range" name="range-contrast" id="range-contrast" min="0" max="100" step="1">
+                <div class="actions__range">
+                <!-- Тут будет бегунок на CSS -->
+                </div>
+              </li>
+            </ul>
+            <button class="actions__button" type="submit">Запостить</button>
+            <button class="actions__button" type="reset">Отмена</button>
+            <p class="actions__toggles">
+              <button class="actions__button actions__button--crop" type="button">Изменение размера</button>
+              <button class="actions__button actions__button--fill" type="button">Заливка цветом</button>
+              <button class="actions__button actions__button--contrast" type="button">Изменение контраста</button>
+            </p>
+          </form>
+        </div>
       </section>
     </main>
 
