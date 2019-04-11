@@ -1,0 +1,7 @@
+.logo[href] {
+  display: block;
+
+  &:hover .logo__image path {
+    fill: $main-color;
+  }
+}

@@ -1,0 +1,50 @@
+.download {
+  padding-top: 462px;
+  padding-bottom: 25px;
+
+  font-style: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $text-color-light;
+
+  background-color: #1d2631;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.download__title {
+  margin: 0 auto;
+  margin-top: -2px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $text-color-light;
+  text-align: center;
+}
+
+.download__main-link {
+  display: flex;
+  align-items: center;
+
+  margin-top: 28px;
+  width: 274px;
+  min-height: 49px;
+  border: 3px solid #ffffff;
+
+  border-radius: 35px;
+
+  &:hover {
+    background-color: #ffffff;
+  }
+}
+
+.download__main-link:hover .download__title {
+  color: $main-color;
+}
+
+.download__main-link:active .download__title {
+  opacity: 0.3;
+}
+
