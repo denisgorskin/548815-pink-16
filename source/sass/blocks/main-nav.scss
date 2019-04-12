@@ -10,12 +10,12 @@
   cursor: pointer;
 
   padding: 0;
-  width: 65px;
-  height: 65px;
+  width: 69px;
+  height: 69px;
   border: none;
 
   background-color: transparent;
-  background-color: #fff; // временно!
+  background-color: #ff0; // временно!
 }
 
 .main-nav__list {
@@ -28,6 +28,7 @@
   line-height: 32px;
   text-transform: uppercase;
   font-weight: 700;
+  text-align: center;
   color: $text-color-light;
 }
 
@@ -37,6 +38,11 @@
 }
 
 .main-nav__item a {
+  display: block;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
   color: $text-color-light;
 
   &[href]:hover {

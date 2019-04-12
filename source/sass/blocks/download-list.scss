@@ -4,6 +4,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .download-list__link {
@@ -14,11 +18,11 @@
 
   background-color: blue;
 
-  &--ios {
+  &--ios { //временно так
     background-image: url("../../img/logo-apple.svg");
     background-repeat: no-repeat;
     background-size: 47px 56px;
-    background-position: 0 0;
+    background-position: bottom center;
   }
 
   &--android {
