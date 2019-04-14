@@ -1,0 +1,19 @@
+.page-header {
+  position: relative;
+
+  width: 320px;
+
+  background-color: #283645;
+}
+
+.page-header__logo {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-bottom: 24px;
+}
+
+.page-header__main-nav {
+  width: 100%;
+}

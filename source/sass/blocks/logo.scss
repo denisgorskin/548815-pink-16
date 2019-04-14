@@ -1,0 +1,19 @@
+.logo {
+  display: block;
+}
+
+.logo[href]:hover .logo__image path {
+  fill: $main-color;
+}
+
+.logo[href]:active .logo__image path {
+  opacity: 0.3;
+}
+
+.logo--header[href]:active .logo__image path {
+  fill: #ffffff;
+}
+
+.logo__image {
+  display: block;
+}
