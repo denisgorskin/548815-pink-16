@@ -1,0 +1,152 @@
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actions__list {
+  list-style: none;
+
+  margin: 0;
+  padding: 0;
+}
+
+.actions__item {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.actions__toggles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.actions__toggle {
+  cursor: pointer;
+
+  padding: 0;
+  margin-left: 32px;
+  border: none;
+  width: 48px;
+  min-height: 44px;
+
+  background-color: transparent;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.actions__toggle:hover .actions__icon {
+  opacity: 0.5;
+}
+
+.actions__icon {
+  fill: #000000;
+  opacity: 0.3;
+}
+
+.actions__toggle--current .actions__icon {
+  fill: $main-color;
+  opacity: 1;
+}
+
+.actions__toggle--current:hover .actions__icon {
+  opacity: 1;
+}
+
+.actions__range {
+  position: relative;
+
+  margin-top: 20px;
+  width: 240px;
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.actions__grip {
+  cursor: pointer;
+
+  position: absolute;
+  top: 50%;
+  left: 80%;
+
+  transform: translateY(-50%);
+
+  box-sizing: border-box;
+
+  width: 14px;
+  height: 14px;
+  border: 2px solid $main-color;
+  border-radius: 50%;
+
+  background-color: #ffffff;
+
+  &:active {
+    background-color: $main-color;
+  }
+}
+
+.actions__buttons {
+  margin-top: 32px;
+  padding: 40px 20px;
+  padding-bottom: 30px;
+  border-top: 1px solid #dddfe0;
+}
+
+.actions__button {
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  width: 280px;
+  padding: 15px 0;
+  margin-bottom: 12px;
+  border: 3px solid $main-color;
+  border-radius: 40px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $main-color;
+  text-align: center;
+
+  background-color: transparent;
+
+  &:hover {
+    color: #ffffff;
+
+    background-color: $main-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--reset {
+    border-color: rgba(40, 54, 69, 0.1);
+
+    color: rgba(40, 54, 69, 0.1);
+
+    &:hover {
+      border-color: rgba(40, 54, 69, 0.3);
+
+      color: rgba(40, 54, 69, 0.3);
+
+      background-color: transparent;
+    }
+
+    &:active {
+      border-color: transparent;
+
+      color: rgba(255, 255, 255, 0.3);
+
+      background-color: rgba(40, 54, 69, 0.3);
+    }
+  }
+}
+

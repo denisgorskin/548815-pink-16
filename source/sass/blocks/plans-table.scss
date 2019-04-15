@@ -1,0 +1,54 @@
+.plans-table {
+  border-collapse: collapse;
+  table-layout: fixed;
+
+  text-transform: uppercase;
+}
+
+.plans-table__cell {
+  box-sizing: border-box;
+  min-width: 278px;
+  padding: 14px;
+  padding-left: 22px;
+  border: 2px solid #e5e5e5;
+
+  background-color: #ffffff;
+
+  &--top {
+    border-top: none;
+  }
+
+  &--left {
+    display: none;
+  }
+}
+
+.plans-table__title {
+  padding-top: 16px;
+  padding-bottom: 22px;
+  border: 2px solid #e5e5e5;
+  border-bottom: none;
+  border-top: none;
+
+  text-align: center;
+  color: $text-color-light;
+
+  background-color: #283645;
+}
+
+.plans-table__plan-type {
+  display: block;
+
+  margin-bottom: 3px;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.plans-table__plan-price {
+  display: block;
+
+  font-size: 24px;
+  font-weight: 300;
+  font-style: normal;
+}
