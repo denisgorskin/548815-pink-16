@@ -52,7 +52,7 @@
 
 .form-list__checkbox:hover + label::before,
 .form-list__checkbox:focus + label::before {
-  border-color: #000000
+  border-color: #000000;
 }
 
 .form-list__checkbox:active + label::before {
@@ -96,7 +96,7 @@
 
 .form-list__radio:hover + label::before,
 .form-list__radio:focus + label::before {
-  border-color: #000000
+  border-color: #000000;
 }
 
 .form-list__radio:active + label::before {
