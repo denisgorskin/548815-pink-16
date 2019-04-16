@@ -137,41 +137,63 @@
 
       <section class="user-photo">
         <h2 class="visually-hidden">Выложить своё фото</h2>
-        <img src="#" alt="Заснеженная автодорога посреди леса." class="user-photo__image">
-        <div class="user-photo__actions actions">
-          <form action="https://echo.htmlacademy.ru" method="get">
-            <ul class="actions__list">
-              <li class="actions__item">
-                <label for="range-crop" class="visually-hidden">Обрезать</label>
-                <input class="visually-hidden" type="range" name="range-crop" id="range-crop" min="0" max="100" step="1">
-                <div class="actions__range">
-                <!-- Тут будет бегунок на CSS -->
-                </div>
-              </li>
-              <li class="actions__item">
-                <label for="range-fill" class="visually-hidden">Выполнить заливку</label>
-                <input class="visually-hidden" type="range" name="range-fill" id="range-fill" min="0" max="100" step="1">
-                <div class="actions__range">
-                <!-- Тут будет бегунок на CSS -->
-                </div>
-              </li>
-              <li class="actions__item">
-                <label for="range-contrast" class="visually-hidden">Изменить контраст</label>
-                <input class="visually-hidden" type="range" name="range-contrast" id="range-contrast" min="0" max="100" step="1">
-                <div class="actions__range">
-                <!-- Тут будет бегунок на CSS -->
-                </div>
-              </li>
-            </ul>
+        <p class="user-photo__description inner-page__description">
+          Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!
+        </p>
+        <!-- <div class="user-photo__actions actions"> -->
+        <form class="user-photo__actions actions" action="https://echo.htmlacademy.ru" method="get">
+          <img src="img/photo-road-mobile@1x.jpg" alt="Заснеженная автодорога посреди леса." width="280" height="374">
+          <p class="actions__toggles">
+            <button class="actions__toggle actions__toggle--current" type="button">
+              <span class="visually-hidden">Изменение размера</span>
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                <path class="actions__icon" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+              </svg>
+            </button>
+            <button class="actions__toggle" type="button">
+              <span class="visually-hidden">Заливка цветом</span>
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                <path class="actions__icon" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                <rect class="actions__icon" y="40" width="48" height="3"/>
+              </svg>
+            </button>
+            <button class="actions__toggle" type="button">
+              <span class="visually-hidden">Изменение контраста</span>
+              <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                <path class="actions__icon" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                <path class="actions__icon" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+              </svg>
+            </button>
+          </p>
+          <ul class="actions__list">
+            <li class="actions__item actions__item--active">
+              <label for="range-crop" class="visually-hidden">Обрезать</label>
+              <input class="visually-hidden" type="range" name="range-crop" id="range-crop" min="0" max="100" step="1">
+              <div class="actions__range">
+                <button class="actions__grip" type="button"></button>
+              </div>
+            </li>
+            <li class="actions__item">
+              <label for="range-fill" class="visually-hidden">Выполнить заливку</label>
+              <input class="visually-hidden" type="range" name="range-fill" id="range-fill" min="0" max="100" step="1">
+              <div class="actions__range">
+                <button class="actions__grip" type="button"></button>
+              </div>
+            </li>
+            <li class="actions__item">
+              <label for="range-contrast" class="visually-hidden">Изменить контраст</label>
+              <input class="visually-hidden" type="range" name="range-contrast" id="range-contrast" min="0" max="100" step="1">
+              <div class="actions__range">
+                <button class="actions__grip" type="button"></button>
+              </div>
+            </li>
+          </ul>
+          <div class="actions__buttons">
             <button class="actions__button" type="submit">Запостить</button>
-            <button class="actions__button" type="reset">Отмена</button>
-            <p class="actions__toggles">
-              <button class="actions__button actions__button--crop" type="button">Изменение размера</button>
-              <button class="actions__button actions__button--fill" type="button">Заливка цветом</button>
-              <button class="actions__button actions__button--contrast" type="button">Изменение контраста</button>
-            </p>
-          </form>
-        </div>
+            <button class="actions__button actions__button--reset" type="reset">Отмена</button>
+          </div>
+        </form>
+        <!-- </div> -->
       </section>
     </main>
 

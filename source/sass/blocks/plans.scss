@@ -1,0 +1,17 @@
+.plans {
+  overflow-x: hidden;
+
+  width: 320px;
+  padding-bottom: 50px;
+
+  background-color: #f2f2f2;
+}
+
+.plans__toggles {
+  margin-top: 45px;
+  justify-content: center;
+}
+
+.plans__table {
+  transform: translateX(-278px) translateX(20px);
+}

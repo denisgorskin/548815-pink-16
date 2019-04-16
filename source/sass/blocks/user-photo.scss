@@ -1,0 +1,17 @@
+.user-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #f2f2f2;
+}
+
+.user-photo__description {
+  min-height: 175px;
+
+  background-color: #ffffff;
+}
+
+.user-photo__actions {
+  margin-top: 20px;
+}

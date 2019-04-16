@@ -1,0 +1,35 @@
+.reviews {
+  width: 280px;
+  padding: 0 20px;
+  padding-bottom: 134px;
+  margin-top: 43px;
+
+  background-image: linear-gradient(175deg, #ffffff 336px, #f2f2f2 336px);
+}
+
+.reviews__list {
+  text-align: center;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__author {
+  display: block;
+
+  margin-bottom: 14px;
+
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.reviews__text {
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.reviews__toggles {
+  justify-content: center;
+}

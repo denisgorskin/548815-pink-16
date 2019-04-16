@@ -1,3 +1,7 @@
+.photos {
+  margin-top: 13px;
+}
+
 .photos__list {
   list-style: none;
 
@@ -7,4 +11,8 @@
 
 .photos__item {
   margin-bottom: 21px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
