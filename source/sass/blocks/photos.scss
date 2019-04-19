@@ -1,7 +1,3 @@
-.photos {
-  margin-top: 13px;
-}
-
 .photos__list {
   list-style: none;
 
@@ -14,5 +10,38 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photos__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    width: 620px;
+  }
+
+  .photos__item {
+    margin-bottom: 20px;
+
+    &:nth-last-child(-n+2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photos__list {
+    width: 940px;
+  }
+
+  .photos__item {
+    margin-bottom: 55px;
+
+    &:nth-last-child(-n+3) {
+      margin-bottom: 0;
+    }
   }
 }
