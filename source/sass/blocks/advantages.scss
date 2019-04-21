@@ -11,7 +11,7 @@
   background-image: url("../../img/bg-triangle-white.svg"),
     linear-gradient(to bottom, #ffffff 185px, #f2f2f2 185px);
   background-repeat: no-repeat;
-  background-size: 320px auto;
+  background-size: 321px auto;
   background-position: center 185px, 0 0;
 }
 
@@ -32,7 +32,7 @@
 .advantages__list {
   list-style: none;
 
-  padding: 0 20px;
+  padding: 0;
   margin: 0;
   margin-top: 110px;
 }
@@ -71,10 +71,7 @@
     padding-bottom: 0;
     width: 660px;
 
-    background-image: url("../../img/bg-triangle-white.svg"),
-      linear-gradient(to bottom, #ffffff 190px, #f2f2f2 190px);
-    background-size: 660px auto;
-    background-position: center 190px, 0 0;
+    background: none;
   }
 
   .advantages__offer {
@@ -84,11 +81,18 @@
     line-height: 1.2;
   }
 
+  .advantages__wrapper-list {
+    background-color: #f2f2f2;
+    background-image: url("../../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-size: 661px auto;
+    background-position: 0 0;
+  }
+
   .advantages__list {
-    margin-top: 120px;
-    margin-right: 20px;
+    margin-top: 50px;
     margin-left: auto;
-    padding: 0;
+    padding-top: 70px;
     padding-bottom: 43px;
     width: 310px;
 
@@ -106,7 +110,11 @@
   .advantages__box {
     display: block;
 
-    padding: 95px 25px 100px 330px;
+    margin-top: 55px;
+    margin-left: auto;
+    padding-top: 40px;
+    padding-right: 10px;
+    width: 300px;
 
     background-color: #ffffff;
   }
@@ -119,12 +127,17 @@
 
     background-image: url("../../img/bg-triangle-white.svg"),
       linear-gradient(to bottom, #ffffff 258px, #f2f2f2 258px);
-    background-size: 1200px auto;
+    background-repeat: no-repeat;
+    background-size: 1201px auto;
     background-position: center 258px, 0 0;
   }
 
   .advantages__offer {
     font-size: 50px;
+  }
+
+  .advantages__wrapper-list {
+    background: none;
   }
 
   .advantages__list {
@@ -134,8 +147,7 @@
 
     margin: 0 auto;
     margin-top: 70px;
-    padding: 0 130px;
-    // padding-top: 360px;
+    padding: 0;
     width: auto;
 
     text-align: center;
@@ -168,7 +180,9 @@
 
   .advantages__box {
     margin-top: 70px;
-    padding: 90px 170px 115px 495px;
+    padding-top: 90px;
+    padding-bottom: 110px;
+    width: 560px;
 
     background-color: transparent;
   }

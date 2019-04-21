@@ -61,6 +61,18 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+.content-container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .content-container {
+    width: 620px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .header-container {
     position: relative;
@@ -69,5 +81,9 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
 
     // background-color: #ff0;
+  }
+
+  .content-container {
+    width: 940px;
   }
 }

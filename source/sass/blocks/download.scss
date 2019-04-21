@@ -16,7 +16,6 @@
   margin: 0 auto;
   padding-top: 423px;
   padding-bottom: 30px;
-  width: 280px;
 
   display: flex;
   flex-direction: column;
@@ -87,9 +86,7 @@
 
   .download__wrapper {
     margin: 0;
-    margin-left: 20px;
-    padding-top: 92px;
-    padding-bottom: 110px;
+    padding: 94px 0 110px;
     width: 300px;
   }
 
@@ -134,7 +131,7 @@
   }
 
   .download__wrapper {
-    margin-left: 130px;
+    // margin: 0;
     padding-top: 218px;
     padding-bottom: 123px;
   }
