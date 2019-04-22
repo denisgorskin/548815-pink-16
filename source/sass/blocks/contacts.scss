@@ -1,4 +1,6 @@
 .contacts {
+  display: none;
+
   width: 320px;
   margin-top: 40px;
 
@@ -47,9 +49,9 @@
   height: 200px;
 
   background-image:
-    url("../../img/icon-map-marker.svg"),
-    url("../../img/bg-triangle-white-footer.svg"),
-    url("../../img/bg-map-mobile@1x.png");
+    url("../img/icon-map-marker.svg"),
+    url("../img/bg-triangle-white-footer.svg"),
+    url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-size:
     36px 35px,
