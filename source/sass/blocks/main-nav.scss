@@ -2,22 +2,6 @@
   background-color: #283645;
 }
 
-.main-nav__toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  cursor: pointer;
-
-  padding: 0;
-  width: 69px;
-  height: 69px;
-  border: none;
-
-  background-color: transparent;
-  background-color: #ff0; // временно!
-}
-
 .main-nav__list {
   list-style: none;
 
@@ -55,14 +39,6 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .main-nav__toggle {
-    margin-top: 27px;
-    width: 55px;
-    height: 55px;
-  }
-}
-
 @media (min-width: $desktop-width) {
   .main-nav {
     background-color: rgba(0, 0, 0, 0);
@@ -70,6 +46,7 @@
 
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
 
     margin-left: auto;
 
@@ -103,9 +80,5 @@
       color: $text-color-light;
       opacity: 0.3;
     }
-  }
-
-  .main-nav__toggle {
-    display: none;
   }
 }
