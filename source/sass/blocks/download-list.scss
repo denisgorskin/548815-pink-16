@@ -13,29 +13,29 @@
 .download-list__link {
   display: block;
 
-  width: 47px;
-  height: 56px;
+  width: 48px;
+  height: 58px;
 
-  background-color: blue;
+  // background-color: blue;
 
   &--ios { //временно так
     background-image: url("../img/logo-apple.svg");
     background-repeat: no-repeat;
-    background-size: 47px 56px;
+    background-size: 46px 57px;
     background-position: bottom center;
   }
 
   &--android {
     background-image: url("../img/logo-android.svg");
     background-repeat: no-repeat;
-    background-size: 43px 47px;
+    background-size: 42px 47px;
     background-position: bottom center;
   }
 
   &--windows {
     background-image: url("../img/logo-microsoft.svg");
     background-repeat: no-repeat;
-    background-size: 44px 41px;
+    background-size: 44px 42px;
     background-position: bottom center;
   }
 }

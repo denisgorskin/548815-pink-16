@@ -23,6 +23,8 @@
 }
 
 body {
+  position: relative;
+
   min-width: 320px;
   padding: 0;
   margin: 0 auto;
@@ -75,12 +77,14 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: $desktop-width) {
   .header-container {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-    width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    min-height: 110px;
 
-    // background-color: #ff0;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .content-container {
