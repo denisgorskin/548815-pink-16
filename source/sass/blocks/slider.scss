@@ -49,3 +49,31 @@
     }
   }
 }
+
+.slider__button {
+  cursor: pointer;
+
+  position: absolute;
+  top: 28px;
+
+  padding: 0;
+  border: none;
+
+  width: 22px;
+  height: 41px;
+
+  // background-color: blue;
+  background-repeat: no-repeat;
+}
+
+.slider__button--prev {
+  left: 0;
+
+  background-image: url("../img/icon-review-arrow-left.svg");
+}
+
+.slider__button--next {
+  right: 0;
+
+  background-image: url("../img/icon-review-arrow-right.svg");
+}

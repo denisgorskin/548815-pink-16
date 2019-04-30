@@ -113,14 +113,17 @@
 
       <section class="reviews">
         <h2 class="visually-hidden">Отзывы о нас</h2>
-        <div class="reviews__wrapper slider">
+        <div class="reviews__content-container content-container slider">
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item slider__item--current">
-              <cite class="reviews__author">Николай Петров</cite>
+              <div class="reviews__author-field">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <small class="reviews__author-age">25 лет, водитель трамвая</small>
+              </div>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
           </div>
-          <p class="reviews__toggles slider__toggles">
+          <p class="slider__toggles reviews__toggles">
             <button class="slider__toggle slider__toggle--current" type="button">
               <span class="visually-hidden">Первый отзыв</span>
             </button>
@@ -131,6 +134,14 @@
               <span class="visually-hidden">Третий отзыв</span>
             </button>
           </p>
+          <p class="slider__buttons reviews__buttons">
+            <button class="slider__button slider__button--prev" type="button">
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <button class="slider__button slider__button--next" type="button">
+              <span class="visually-hidden">Вперед</span>
+            </button>
+          </p>
         </div>
       </section>
 
@@ -139,12 +150,12 @@
         <div class="plans__wrapper slider">
           <table class="plans__table plans-table">
             <tr>
-              <td class="plans-table__cell plans-table__cell--left"></td>
+              <td class="plans-table__title plans-table__cell--left plans-table__title--hidden"></td>
               <td class="plans-table__title">
                 <b class="plans-table__plan-type">База</b>
                 <i class="plans-table__plan-price">1,99 USD</i>
               </td>
-              <td class="plans-table__title">
+              <td class="plans-table__title plans-table__title--popular">
                 <b class="plans-table__plan-type">Стандарт</b>
                 <i class="plans-table__plan-price">3,99 USD</i>
               </td>
@@ -155,21 +166,39 @@
             </tr>
             <tr>
               <td class="plans-table__cell plans-table__cell--left">Розовый фильтр</td>
-              <td class="plans-table__cell plans-table__cell--top">Розовый фильтр</td>
-              <td class="plans-table__cell plans-table__cell--top">Розовый фильтр</td>
-              <td class="plans-table__cell plans-table__cell--top">Розовый фильтр</td>
+              <td class="plans-table__cell plans-table__cell--top plans-table__cell--true">
+                <span class="plans-table__text">Розовый фильтр</span>
+              </td>
+              <td class="plans-table__cell plans-table__cell--top plans-table__cell--true">
+                <span class="plans-table__text">Розовый фильтр</span>
+              </td>
+              <td class="plans-table__cell plans-table__cell--top plans-table__cell--true">
+                <span class="plans-table__text">Розовый фильтр</span>
+              </td>
             </tr>
             <tr>
               <td class="plans-table__cell plans-table__cell--left">Смайлики</td>
-              <td class="plans-table__cell">Смайлики</td>
-              <td class="plans-table__cell">Смайлики</td>
-              <td class="plans-table__cell">Смайлики</td>
+              <td class="plans-table__cell plans-table__cell--false">
+                <span class="plans-table__text">Смайлики</span>
+              </td>
+              <td class="plans-table__cell plans-table__cell--true">
+                <span class="plans-table__text">Смайлики</span>
+              </td>
+              <td class="plans-table__cell plans-table__cell--true">
+                <span class="plans-table__text">Смайлики</span>
+              </td>
             </tr>
             <tr>
               <td class="plans-table__cell plans-table__cell--left">Комментарии</td>
-              <td class="plans-table__cell">Комментарии</td>
-              <td class="plans-table__cell">Комментарии</td>
-              <td class="plans-table__cell">Комментарии</td>
+              <td class="plans-table__cell plans-table__cell--false">
+                <span class="plans-table__text">Комментарии</span>
+              </td>
+              <td class="plans-table__cell plans-table__cell--false">
+                <span class="plans-table__text">Комментарии</span>
+              </td>
+              <td class="plans-table__cell plans-table__cell--true">
+                <span class="plans-table__text">Комментарии</span>
+              </td>
             </tr>
           </table>
           <p class="plans__toggles slider__toggles">
@@ -190,15 +219,17 @@
         <div class="contacts__wrapper">
           <h2 class="visually-hidden">Связаться с нами</h2>
           <p class="contacts__offer">Остались вопросы? Свяжитесь с нами!</p>
-          <p class="contacts__item">
-            <b class="contacts__type">Звоните:</b> +7 (812) 555-66-66
-          </p>
-          <p class="contacts__item">
-            <b class="contacts__type">Пишите:</b> mail@htmlacademy.ru
-          </p>
-          <p class="contacts__item">
-            <b class="contacts__type">Приезжайте в гости:</b> ул. Большая Конюшенная, 19/8
-          </p>
+          <div class="contacts__list">
+            <p class="contacts__item">
+              <b class="contacts__type">Звоните:</b> +7 (812) 555-66-66
+            </p>
+            <p class="contacts__item contacts__item--write">
+              <b class="contacts__type">Пишите:</b> mail@htmlacademy.ru
+            </p>
+            <p class="contacts__item">
+              <b class="contacts__type">Приезжайте в гости:</b> ул. Большая Конюшенная,&nbsp19/8
+            </p>
+          </div>
         </div>
 
         <div class="contacts__map">

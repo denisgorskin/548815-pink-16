@@ -102,3 +102,48 @@
 .form-list__radio:active + label::before {
   border-color: $main-color;
 }
+
+@media (min-width: $tablet-width) {
+  .form-list {
+    margin-top: 12px;
+    margin-bottom: 36px;
+
+    &--checkboxes {
+      margin-bottom: 25px;
+    }
+  }
+
+  .form-list__item {
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-list--checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    height: 120px;
+  }
+
+  .form-list__item--checkbox {
+    margin-right: 55px;
+
+    &:nth-child(2n) {
+      margin-bottom: 0;
+    }
+  }
+
+  .form__border--textarea {
+    padding-bottom: 32px;
+  }
+
+  .form__textarea {
+    height: 125px;
+  }
+
+  .form__bottom-wrapper {
+    margin-top: 65px;
+  }
+}

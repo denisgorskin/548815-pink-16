@@ -1,14 +1,14 @@
 .user-photo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
 
   background-color: #f2f2f2;
-
-  display: none;
 }
 
-.user-photo__description {
+.user-photo__description-container {
   min-height: 175px;
 
   background-color: #ffffff;
@@ -16,4 +16,25 @@
 
 .user-photo__actions {
   margin-top: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-photo {
+    background-color: #ffffff;
+  }
+  .user-photo__description-container {
+    min-height: 192px;
+  }
+
+  .user-photo__actions {
+    margin-top: 0;
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-photo__description-container {
+    min-height: 185px;
+  }
 }
