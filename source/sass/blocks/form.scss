@@ -33,7 +33,7 @@
   border: none;
 }
 
-.form__field--textarea .form__title {
+.form__title--textarea {
   padding-bottom: 10px;
 }
 
@@ -241,11 +241,6 @@
     }
   }
 
-  .form__field--textarea .form__title {
-    margin: 0;
-    padding: 0 25px;
-  }
-
   .form__border {
     padding: 38px 60px 26px 60px;
     border: 2px solid #e5e5e5;
@@ -267,6 +262,17 @@
 
     &--contacts {
       display: block;
+
+      padding: 0 30px;
+    }
+
+    &--achievements {
+      padding: 0 32px;
+    }
+
+    &--textarea {
+      margin: 0;
+      padding: 0 35px;
     }
   }
 
@@ -418,6 +424,7 @@
   .form__input--contacts input {
     flex-grow: 0;
   }
+
 
   .form__addition {
     display: inline;
