@@ -343,6 +343,7 @@
 
     &:first-child {
       padding-top: 15px;
+      padding-bottom: 0;
     }
 
     &--name {
@@ -377,11 +378,17 @@
   }
 
   .form__field--app .form__border {
-    padding: 30px 10px 37px 10px;
+    padding: 30px 10px 37px 47px;
   }
 
   .form__field--app .form__title {
     padding: 0 25px;
+  }
+
+  .form__field--app .form__list {
+    padding-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 26px;
   }
 
   .form__field--contacts .form__border {

@@ -118,19 +118,47 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .form-list--checkboxes {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
 
-    height: 120px;
+    margin-bottom: 38px;
   }
 
   .form-list__item--checkbox {
-    margin-right: 55px;
+    box-sizing: border-box;
+
+    margin-right: 50px;
+    margin-bottom: 50px;
+
+    &:nth-child(6n+1),
+    &:nth-child(6n+2) {
+      width: 260px;
+    }
+
+    &:nth-child(6n+3),
+    &:nth-child(6n+4) {
+      width: 245px;
+    }
+
+    &:nth-child(6n+5),
+    &:nth-child(6n) {
+      width: 210px;
+    }
+
+    &:nth-child(6n),
+    &:nth-child(6n-1) {
+      margin-right: 0;
+    }
 
     &:nth-child(2n) {
+      order: 2;
+    }
+
+    &:last-child,
+    &:nth-last-child(3),
+    &:nth-last-child(5) {
       margin-bottom: 0;
     }
   }
