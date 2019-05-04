@@ -214,10 +214,11 @@
       top: 0;
       left: 0;
 
-      width: 24px;
+      width: 22px;
       height: 22px;
 
-      background-color: #000;
+      background-image: url("../img/crop-pink.svg");
+      background-size: 22px 22px;
     }
 
     &--fill::after {
@@ -227,10 +228,11 @@
       top: 0;
       left: 0;
 
-      width: 22px;
+      width: 24px;
       height: 22px;
 
-      background-color: #000;
+      background-image: url("../img/fill-pink.svg");
+      background-size: 24px 22px;
     }
 
     &--contrast::after {
@@ -243,7 +245,8 @@
       width: 16px;
       height: 16px;
 
-      background-color: #000;
+      background-image: url("../img/contrast-pink.svg");
+      background-size: 16px 16px;
     }
   }
 
@@ -291,7 +294,7 @@
   }
 
   .actions__wrapper {
-    padding: 57px 60px 57px 80px;
+    padding: 57px 60px 47px 80px;
     width: 800px;
 
     background-color: #f2f2f2;
@@ -318,11 +321,17 @@
     &--crop::after {
       width: 44px;
       height: 44px;
+
+      background-repeat: no-repeat;
+      background-size: 44px 44px;
     }
 
     &--fill::after {
       width: 48px;
       height: 43px;
+
+      background-repeat: no-repeat;
+      background-size: 48px 43px;
     }
 
     &--contrast::after {
@@ -331,6 +340,9 @@
 
       width: 32px;
       height: 32px;
+
+      background-repeat: no-repeat;
+      background-size: 32px 32px;
     }
   }
 

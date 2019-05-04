@@ -1,5 +1,27 @@
 .photo-container--panorama {
+  position: relative;
+
   margin-bottom: 21px;
+
+  &::after {
+    content: "Панорама дня";
+
+    position: absolute;
+    top: 0;
+    right: 20px;
+
+    // width: 140px;
+    padding: 6px 19px;
+
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: $text-color-light;
+
+    background-color: $main-color;
+  }
 }
 
 .photo-container__photo {
@@ -63,16 +85,19 @@
       margin: 0 auto;
       margin-bottom: 50px;
       width: 660px;
+
+      &::after {
+        top: 55px;
+      }
     }
   }
 
   .photo-container--panorama .photo-container__link {
     display: block;
 
-    width: 100%;
-
-    // временно!!
+    width: 660px;
     height: 509px;
+
     background-color: pink;
   }
 
@@ -99,10 +124,6 @@
     display: block;
 
     width: 100%;
-
-    // временно!
-    height: 300px;
-    background-color: pink;
   }
 
   .photo-container__wrapper {
@@ -115,6 +136,12 @@
     padding-bottom: 15px;
     width: 100%;
     min-height: 155px;
+  }
+
+  .photo-container__photo--panorama {
+    height: 100%;
+
+    object-fit: cover;
   }
 
 
@@ -133,11 +160,17 @@
 @media (min-width: $desktop-width) {
   .photo-container--panorama {
     width: 1200px;
+
+    &::after {
+      top: 55px;
+      right: 130px;
+    }
   }
 
+
   .photo-container--panorama .photo-container__link {
-    // временно!
-    height: 506px;
+    width: 100%;
+    height: auto;
   }
 
   .photo-container--panorama .photo-container__wrapper {
@@ -146,7 +179,12 @@
   }
 
   .photo-container__link {
-    // временно!
-    height: 400px;
+
+  }
+
+  .photo-container__photo--panorama {
+    height: auto;
+
+    object-fit: fill;
   }
 }

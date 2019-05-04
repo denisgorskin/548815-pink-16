@@ -24,4 +24,28 @@
 
   border: 3px solid #ecedef;
   border-radius: 50%;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &:hover {
+    border-color: #000000;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--twitter {
+    background-image: url("../img/icon-twitter.svg");
+  }
+
+  &--facebook {
+    background-image: url("../img/icon-facebook.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+    background-position: 17px center;
+  }
 }
