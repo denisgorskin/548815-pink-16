@@ -55,7 +55,7 @@
   background-repeat: no-repeat;
   background-size:
     36px 35px,
-    auto;
+    320px auto;
   background-position:
     center 95px,
     bottom center;
@@ -77,6 +77,12 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 320px auto;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../img/icon-map-marker.svg"),
+      url("../img/bg-map-mobile@2x.jpg");
   }
 }
 
@@ -137,7 +143,7 @@
       url("../img/bg-map-tablet@1x.jpg");
     background-size:
       36px 35px,
-      auto;
+      700px auto;
     background-position:
       center 193px,
       -20px -350px;
@@ -149,6 +155,12 @@
 
       // background-color: pink;
       background-size: 660px auto;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+        url("../img/icon-map-marker.svg"),
+        url("../img/bg-map-tablet@2x.jpg");
     }
   }
 }
@@ -196,7 +208,7 @@
       url("../img/bg-map-desktop@1x.jpg");
     background-size:
       36px 35px,
-      auto;
+      1200px auto;
     background-position:
       center 265px,
       left -275px;
@@ -211,6 +223,12 @@
 
       // background-color: pink;
       background-size: 1200px auto;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image:
+      url("../img/icon-map-marker.svg"),
+      url("../img/bg-map-desktop@2x.jpg");
     }
   }
 }
