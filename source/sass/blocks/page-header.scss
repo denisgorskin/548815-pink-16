@@ -26,9 +26,14 @@
   border: none;
 
   background-color: transparent;
-  background-image: url("../img/icon-menu-cross.svg");
-  background-repeat: no-repeat;
-  background-position: center 21px;
+}
+
+.page-header__toggle:hover > .page-header__toggle-image {
+  fill: $main-color;
+}
+
+.page-header__toggle-image {
+  fill: #ffffff;
 }
 
 .page-header__main-nav {
@@ -57,13 +62,6 @@
 
   .page-header__logo {
     padding: 27px 20px 42px 20px;
-  }
-
-  // временно!! 👻
-  .logo__image {
-    width: 147px;
-    height: 40px;
-    background-color: #fff;
   }
 }
 

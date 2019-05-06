@@ -39,15 +39,15 @@
   margin-left: 15px;
 }
 
-.main-footer__academy path {
+.main-footer__academy {
   fill: $main-color;
 }
 
-.main-footer__academy:hover path {
+.main-footer__academy:hover {
   fill: #000000;
 }
 
-.main-footer__academy:active path {
+.main-footer__academy:active {
   opacity: 0.3;
 }
 
