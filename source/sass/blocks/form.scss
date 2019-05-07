@@ -336,6 +336,7 @@
   .form {
     width: 940px;
   }
+
   .form form {
     flex-direction: row;
     flex-wrap: wrap;
@@ -424,7 +425,6 @@
   .form__input--contacts input {
     flex-grow: 0;
   }
-
 
   .form__addition {
     display: inline;
