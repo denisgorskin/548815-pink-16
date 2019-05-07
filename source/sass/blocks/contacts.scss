@@ -77,6 +77,8 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 320px auto;
+
+    z-index: 1;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
