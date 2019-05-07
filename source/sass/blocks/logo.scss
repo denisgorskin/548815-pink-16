@@ -2,18 +2,89 @@
   display: block;
 }
 
-.logo[href]:hover .logo__image path {
+.logo[href]:hover > .logo__image,
+.logo[href]:hover > .logo__image--footer {
   fill: $main-color;
 }
 
-.logo[href]:active .logo__image path {
-  opacity: 0.3;
-}
-
-.logo--header[href]:active .logo__image path {
+.logo[href]:active > .logo__image {
   fill: #ffffff;
+  opacity: 0.3;
+
+  &--footer {
+    fill: #000000;
+  }
 }
 
 .logo__image {
   display: block;
+
+  fill: #ffffff;
+}
+
+.logo__star,
+.logo__glasses {
+  display: none;
+}
+
+.logo__text {
+  transform: translate(-72px, -17px);
+}
+
+.logo--footer .logo__image {
+  width: 147px;
+  height: 41px;
+
+  fill: #000000;
+}
+
+.logo__footer-glasses {
+  fill: $main-color;
+}
+
+.logo__footer-glasses--big {
+  display: none;
+}
+
+.logo__footer-star {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    width: 147px;
+    height: 41px;
+  }
+
+  .logo__text {
+    transform: translate(0, 0);
+  }
+
+  .logo__glasses--small {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__star {
+    display: block;
+
+    &--pink {
+      fill: $main-color;
+    }
+  }
+
+  .logo--footer[href]:hover .logo__star {
+    fill: $main-color; // не работает :(
+  }
+
+  .logo__glasses--small,
+  .logo__footer-glasses--small {
+    display: none;
+  }
+
+  .logo__glasses--big,
+  .logo__footer-glasses--big {
+    display: block;
+  }
 }

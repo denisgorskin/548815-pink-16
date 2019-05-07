@@ -72,6 +72,11 @@
   font-size: 12px;
   text-transform: uppercase;
   color: $main-color;
+
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-size: 13px 12px;
+  background-position: left 5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -118,6 +123,23 @@
     right: 30px;
 
     padding-right: 30px;
+
+    background: none;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 4px;
+      right: 0;
+
+      width: 13px;
+      height: 13px;
+
+      background-image: url("../img/icon-heart.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
   }
 
   .photo-container__link {
@@ -154,6 +176,8 @@
   .photo-container__likes {
     padding-left: 0;
     padding-bottom: 8px;
+
+    background-position: right 5px;
   }
 }
 
@@ -176,10 +200,6 @@
   .photo-container--panorama .photo-container__wrapper {
     width: 940px;
     padding-bottom: 12px;
-  }
-
-  .photo-container__link {
-
   }
 
   .photo-container__photo--panorama {
