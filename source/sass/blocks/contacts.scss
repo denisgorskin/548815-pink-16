@@ -202,7 +202,8 @@
 
   .contacts__map {
     margin-top: 0;
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     height: 505px;
 
     background-image:
@@ -213,17 +214,17 @@
       1200px auto;
     background-position:
       center 265px,
-      left -275px;
+      center -275px;
 
     &::before {
       top: -12px;
+      left: 50%;
 
       width: 1200px;
       height: 150px;
 
-      transform: scaleY(0.85);
+      transform: scaleY(0.85) translateX(-50%);
 
-      // background-color: pink;
       background-size: 1200px auto;
     }
 

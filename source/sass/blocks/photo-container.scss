@@ -10,7 +10,6 @@
     top: 0;
     right: 20px;
 
-    // width: 140px;
     padding: 6px 19px;
 
     font-size: 12px;
@@ -183,14 +182,15 @@
 
 @media (min-width: $desktop-width) {
   .photo-container--panorama {
-    width: 1200px;
+    min-width: 960px;
+    width: 100%;
+    max-width: 1200px;
 
     &::after {
       top: 55px;
       right: 130px;
     }
   }
-
 
   .photo-container--panorama .photo-container__link {
     width: 100%;
@@ -200,11 +200,5 @@
   .photo-container--panorama .photo-container__wrapper {
     width: 940px;
     padding-bottom: 12px;
-  }
-
-  .photo-container__photo--panorama {
-    height: auto;
-
-    object-fit: fill;
   }
 }
