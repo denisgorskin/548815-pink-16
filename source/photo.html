@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -44,15 +45,22 @@
 
     <main class="inner-page">
       <div class="inner-page__title-container">
-        <h1 class="inner-page__title inner-page__title--short">Фотографии пользователей</h1>
+        <div class="inner-page__wrapper">
+          <h1 class="inner-page__title inner-page__title--short">Фотографии пользователей</h1>
+        </div>
       </div>
       <div class="inner-page__description-container inner-page__description-container--short">
-        <p class="inner-page__description">
-          Взгляните на фотографии, которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не хватает ваших?
-        </p>
+        <div class="inner-page__wrapper">
+          <div class="inner-page__wrapper">
+            <p class="inner-page__description">
+              Взгляните на фотографии, которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не хватает ваших?
+            </p>
+          </div>
+        </div>
       </div>
       <section class="photos">
         <h2 class="visually-hidden">Последние выложенные фотографии</h2>
+        <div class="photo-container photo-container--empty"></div>
         <div class="photo-container photo-container--panorama">
           <a href="#" class="photo-container__link">
             <picture>

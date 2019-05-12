@@ -28,7 +28,8 @@
 }
 
 .logo__text {
-  transform: translate(-72px, -17px);
+  // transform: translate(-72px, -17px);
+  display: none;
 }
 
 .logo--footer .logo__image {
@@ -57,7 +58,12 @@
   }
 
   .logo__text {
-    transform: translate(0, 0);
+    display: block;
+    // transform: translate(0, 0);
+  }
+
+  .logo__mobile {
+    display: none;
   }
 
   .logo__glasses--small {

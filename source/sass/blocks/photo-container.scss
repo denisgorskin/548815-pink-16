@@ -1,6 +1,8 @@
 .photo-container--panorama {
   position: relative;
 
+  max-width: 320px;
+  margin: 0 auto;
   margin-bottom: 21px;
 
   &::after {
@@ -89,6 +91,7 @@
       margin: 0 auto;
       margin-bottom: 50px;
       width: 660px;
+      max-width: 100%;
 
       &::after {
         top: 55px;
@@ -187,8 +190,7 @@
     max-width: 1200px;
 
     &::after {
-      top: 55px;
-      right: 130px;
+      display: none;
     }
   }
 
@@ -198,7 +200,44 @@
   }
 
   .photo-container--panorama .photo-container__wrapper {
+    position: relative;
+
     width: 940px;
     padding-bottom: 12px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .photo-container--empty {
+    position: relative;
+
+    margin: 0 auto;
+    width: 940px;
+    height: 0;
+
+    background-color: red;
+
+    &::after {
+      content: "Панорама дня";
+
+      position: absolute;
+      top: 54px;
+      right: 0;
+
+      padding: 6px 19px;
+
+      font-size: 12px;
+      line-height: 24px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: center;
+      color: $text-color-light;
+
+      background-color: $main-color;
+
+      z-index: 2;
+    }
   }
 }
