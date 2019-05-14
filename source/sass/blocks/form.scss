@@ -9,6 +9,7 @@
   padding-top: 35px;
   padding-bottom: 45px;
   border: none;
+  max-width: 320px; /* для IE */
 
   &:first-child {
     padding-top: 0;
@@ -36,6 +37,7 @@
 .form__title {
   margin: 0;
   margin-bottom: 10px;
+  max-width: 260px;
   padding-top: 5px;
   padding-left: 20px;
   padding-right: 20px;
@@ -116,9 +118,12 @@
   border: 2px solid #e5e5e5;
   border-radius: 2px;
 
+  font-family: inherit;
   font-size: 18px;
   line-height: 30px;
   color: $text-color-dark;
+
+  overflow: auto;
 
   &::placeholder {
     color: $text-color-dark;
@@ -198,8 +203,6 @@
   .form {
     width: 620px;
     margin: 0 auto;
-
-    // background-color: #999;
   }
 
   .form form {
@@ -215,6 +218,7 @@
     margin-bottom: 58px;
     padding: 0;
     width: 100%;
+    max-width: 100%;
 
     background-color: #ffffff;
 
@@ -259,6 +263,7 @@
   .form__title {
     margin: 0;
     padding: 0 25px;
+    max-width: 100%;
 
     &--contacts {
       display: block;
@@ -292,8 +297,6 @@
 
   .form__note {
     margin: auto 0;
-
-    // background-color: #ff0;
   }
 
   .form__input {
@@ -314,15 +317,17 @@
         content: "";
 
         position: absolute;
-        top: 2px;
-        right: 2px;
+        top: 0;
+        right: 0;
 
-        width: 57px;
-        height: 57px;
+        width: 60px;
+        height: 60px;
 
         background-color: #e5e5e5;
         background-repeat: no-repeat;
         background-position: center center;
+
+        z-index: 0;
       }
     }
 
@@ -339,6 +344,12 @@
 
   .form__input input {
     flex-grow: 1;
+
+    margin: 0;
+
+    z-index: 2;
+
+    background-color: transparent;
   }
 
   .form__input--contacts label {
@@ -346,6 +357,11 @@
 
     margin-top: 11px;
     margin-left: 18px;
+  }
+
+  .form__input--contacts input[type="text"] {
+    padding-right: 80px;
+    height: 60px;
   }
 
   .form__label {

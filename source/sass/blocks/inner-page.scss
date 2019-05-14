@@ -6,9 +6,11 @@
 .inner-page__title-container {
   box-sizing: border-box;
 
+  margin: 0 auto;
   padding: 20px;
   padding-top: 30px;
   min-height: 170px;
+  max-width: 320px;
 
   background-color: #2c394a;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -23,6 +25,7 @@
 
 .inner-page__title {
   margin: 0;
+  max-width: 280px; /* для IE */
 
   font-size: 24px;
   line-height: 1.25;
@@ -32,22 +35,30 @@
 }
 
 .inner-page__description-container {
-  box-sizing: border-box;
-
-  margin: 0;
-  padding: 20px;
-  min-height: 185px;
-
   display: flex;
   align-items: center;
+
+  box-sizing: border-box;
+
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 185px;
+  max-width: 320px;
 
   &--low {
     min-height: 170px;
   }
+
+  &::after {
+    content: "";
+    min-height: inherit;
+    font-size: 0;
+  }
 }
 
 .inner-page__description {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 280px; /* для IE */
 
   text-align: center;
 }
@@ -66,6 +77,7 @@
     padding-top: 70px;
     padding-bottom: 50px;
     min-height: 330px;
+    max-width: 100%;
 
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: center -110px;
@@ -78,7 +90,7 @@
 
   .inner-page__title {
     margin: 0 auto;
-    width: 620px;
+    max-width: 620px;
 
     font-size: 50px;
     line-height: 1.2;
@@ -91,7 +103,7 @@
   .inner-page__description-container {
     margin: 0 auto;
     padding: 20px 75px;
-    width: 660px;
+    max-width: 660px;
     min-height: 228px;
 
     &--low {
@@ -101,6 +113,8 @@
 
   .inner-page__description {
     margin: 0 auto;
+    max-width: 620px;
+
     font-size: 18px;
   }
 
@@ -124,24 +138,28 @@
   }
 
   .inner-page__title {
-    width: 820px;
+    max-width: 820px;
 
     &--short {
-      width: 500px;
+      max-width: 500px;
     }
   }
 
   .inner-page__description-container {
-    width: 950px;
+    max-width: 950px;
     min-height: 240px;
 
     &--short {
-      width: 800px;
+      max-width: 800px;
     }
 
     &--low {
       min-height: 223px;
     }
+  }
+
+  .inner-page__description {
+    max-width: 800px;
   }
 
   .inner-page__addition {

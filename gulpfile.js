@@ -83,7 +83,8 @@ gulp.task("copy", function () {
   "source/fonts/**/*.{woff,woff2}",
   "source/img/**",
   "source/js/**",
-  "source/*.ico"
+  "source/*.ico",
+  "source/css/normalize.css"
   ], {
   base: "source"
   })
@@ -108,4 +109,5 @@ gulp.task("build", gulp.series(
   "sprite",
   "html"
 ));
+
 gulp.task("start", gulp.series("build", "server"));

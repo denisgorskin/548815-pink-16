@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div style="display:none">
@@ -45,7 +49,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">«Пинк» — приложение для обработки фото</h1>
       <section class="download">
-        <div class="downloads__content-container content-container">
+        <div class="download__content-container content-container">
           <div class="download__wrapper">
             <a class="download__main-link" href="https://www.apple.com/ru/ios/app-store/" target="blank">
               <h2 class="download__title">
@@ -151,7 +155,7 @@
         <div class="plans__wrapper slider">
           <table class="plans__table plans-table">
             <tr>
-              <td class="plans-table__title plans-table__cell--left plans-table__title--hidden"></td>
+              <td class="plans-table__title plans-table__title--hidden plans-table__cell plans-table__cell--left"></td>
               <td class="plans-table__title">
                 <b class="plans-table__plan-type">База</b>
                 <i class="plans-table__plan-price">1,99 USD</i>
@@ -166,14 +170,14 @@
               </td>
             </tr>
             <tr>
-              <td class="plans-table__cell plans-table__cell--left">Розовый фильтр</td>
-              <td class="plans-table__cell plans-table__cell--top plans-table__cell--true">
+              <td class="plans-table__cell plans-table__cell--top plans-table__cell--left">Розовый фильтр</td>
+              <td class="plans-table__cell plans-table__cell--true plans-table__cell--top">
                 <span class="plans-table__text">Розовый фильтр</span>
               </td>
-              <td class="plans-table__cell plans-table__cell--top plans-table__cell--true">
+              <td class="plans-table__cell plans-table__cell--true plans-table__cell--top">
                 <span class="plans-table__text">Розовый фильтр</span>
               </td>
-              <td class="plans-table__cell plans-table__cell--top plans-table__cell--true">
+              <td class="plans-table__cell plans-table__cell--true plans-table__cell--top plans-table__cell--right">
                 <span class="plans-table__text">Розовый фильтр</span>
               </td>
             </tr>
@@ -185,19 +189,19 @@
               <td class="plans-table__cell plans-table__cell--true">
                 <span class="plans-table__text">Смайлики</span>
               </td>
-              <td class="plans-table__cell plans-table__cell--true">
+              <td class="plans-table__cell plans-table__cell--true plans-table__cell--right">
                 <span class="plans-table__text">Смайлики</span>
               </td>
             </tr>
             <tr>
-              <td class="plans-table__cell plans-table__cell--left">Комментарии</td>
-              <td class="plans-table__cell plans-table__cell--false">
+              <td class="plans-table__cell plans-table__cell--left plans-table__cell--bottom">Комментарии</td>
+              <td class="plans-table__cell plans-table__cell--false plans-table__cell--bottom">
                 <span class="plans-table__text">Комментарии</span>
               </td>
-              <td class="plans-table__cell plans-table__cell--false">
+              <td class="plans-table__cell plans-table__cell--false plans-table__cell--bottom">
                 <span class="plans-table__text">Комментарии</span>
               </td>
-              <td class="plans-table__cell plans-table__cell--true">
+              <td class="plans-table__cell plans-table__cell--true plans-table__cell--bottom plans-table__cell--right">
                 <span class="plans-table__text">Комментарии</span>
               </td>
             </tr>
@@ -228,7 +232,7 @@
               <b class="contacts__type">Пишите:</b> mail@htmlacademy.ru
             </p>
             <p class="contacts__item">
-              <b class="contacts__type">Приезжайте в гости:</b> ул. Большая Конюшенная,&nbsp19/8
+              <b class="contacts__type">Приезжайте в гости:</b> ул. Большая Конюшенная,&nbsp;19/8
             </p>
           </div>
         </div>
@@ -271,8 +275,8 @@
       </p>
     </footer>
 
-    <script src="js/picturefill.js" type="text/javascript"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=f88f29e8-70f0-45d6-b56c-03af370b949d&lang=ru_RU" type="text/javascript"></script>
-    <script src="js/map.js" type="text/javascript"></script>
+    <script src="js/picturefill.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=f88f29e8-70f0-45d6-b56c-03af370b949d&lang=ru_RU"></script>
+    <script src="js/map.js">
   </body>
 </html>

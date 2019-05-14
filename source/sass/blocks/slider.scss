@@ -62,7 +62,6 @@
   width: 22px;
   height: 41px;
 
-  // background-color: blue;
   background-repeat: no-repeat;
 }
 
@@ -70,10 +69,12 @@
   left: 0;
 
   background-image: url("../img/icon-review-arrow-left.svg");
+  background-color: transparent;
 }
 
 .slider__button--next {
   right: 0;
 
   background-image: url("../img/icon-review-arrow-right.svg");
+  background-color: transparent;
 }

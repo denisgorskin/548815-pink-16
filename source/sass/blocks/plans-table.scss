@@ -1,5 +1,6 @@
 .plans-table {
-  border-collapse: collapse;
+  // border-collapse: collapse;
+  border-spacing: 0;
   table-layout: fixed;
 
   text-transform: uppercase;
@@ -12,16 +13,29 @@
   min-width: 278px;
   padding: 14px;
   padding-left: 22px;
-  border: 2px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
 
   background-color: #ffffff;
 
   &--top {
+    // border-top-width: 2px;
     border-top: none;
+  }
+
+  &--top-left {
+    border-top-width: 2px;
+  }
+
+  &--bottom {
+    border-bottom-width: 2px;
   }
 
   &--left {
     display: none;
+  }
+
+  &--right {
+    border-right-width: 2px;
   }
 
   &--true {
@@ -64,18 +78,20 @@
 
   padding-top: 16px;
   padding-bottom: 20px;
-  border: 2px solid #283645;
-  border-left-color: #f2f2f2;
-  border-right: none;
+  border: 1px solid #e5e5e5;
+  border-left-color: #e5e5e5;
+  border-right-color: #e5e5e5;
+  // border-right: none;
   border-top: none;
+  border-bottom: none;
 
   text-align: center;
   color: $text-color-light;
 
   background-color: #283645;
 
-  &:first-child {
-    border-right: 2px solid #283645;
+  &:nth-child(2) {
+    border-left: none;
   }
 
   &:last-child {
@@ -85,6 +101,8 @@
   &--hidden {
     background-color: transparent;
     border: none;
+    border-right: 1px solid #283645;
+    border-bottom: 2px solid #e5e5e5;
   }
 
   &--popular::after {
@@ -147,26 +165,32 @@
     padding: 7px 14px 8px 14px;
 
     &--true {
-      &::after {
-        top: 50%;
-        left: 50%;
+      background-image: url("../img/yes.svg");
+      background-repeat: no-repeat;
+      background-size: 31px 21px;
+      background-position: center center;
 
-        transform: translate(-50%, -50%);
+      &::after {
+        display: none;
       }
     }
 
     &--false {
-      &::after {
-        top: 50%;
-        left: 50%;
+      background-image: url("../img/icon-no.svg");
+      background-repeat: no-repeat;
+      background-size: 27px 26px;
+      background-position: center center;
 
-        transform: translate(-50%, -50%);
+      &::after {
+        display: none;
       }
     }
   }
 
   .plans-table__cell--left {
     display: table-cell;
+
+    border-left-width: 2px;
   }
 
   .plans-table__title {

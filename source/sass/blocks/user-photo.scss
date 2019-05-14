@@ -1,11 +1,13 @@
 .user-photo {
   margin: 0 auto;
+  max-width: 320px;
 
   background-color: #f2f2f2;
 }
 
 .user-photo__description-container {
   min-height: 175px;
+  width: 100%;
 
   background-color: #ffffff;
 }
@@ -17,6 +19,7 @@
 @media (min-width: $tablet-width) {
   .user-photo {
     background-color: #ffffff;
+    max-width: 100%;
   }
 
   .user-photo__description-container {

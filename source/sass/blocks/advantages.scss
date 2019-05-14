@@ -203,7 +203,7 @@
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    // justify-content: space-between;
 
     margin: 0 auto;
     margin-top: 70px;
@@ -219,6 +219,7 @@
     align-items: center;
 
     margin-bottom: 0;
+    margin-right: 20px;
     padding-top: 360px;
     width: 300px;
 
@@ -243,6 +244,8 @@
     }
 
     &:nth-child(3n) {
+      margin-right: 0;
+
       background-image: url("../img/iphone-screen-3-desktop@1x.png");
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

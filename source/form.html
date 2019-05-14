@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div style="display:none">
@@ -56,7 +60,7 @@
         <form action="https://echo.htmlacademy.ru" method="get">
           <div class="form__field form__field--name form__field--light">
             <fieldset class="form__border">
-              <legend class="visually-hidden">Ваше имя</legend>
+              <legend align="center" class="visually-hidden">Ваше имя</legend>
               <p class="form__input">
                 <label for="last-name" class="form__label">Фамилия:</label>
                 <input type="text" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
@@ -73,7 +77,7 @@
           </div>
           <div class="form__field form__field--achievements form__field--dark">
             <fieldset class="form__border">
-              <legend class="form__title form__title--achievements">Ваши безбашенные достижения в путешествии</legend>
+              <legend align="center" class="form__title form__title--achievements">Ваши безбашенные достижения в путешествии</legend>
               <ul class="form__list form-list form-list--checkboxes">
                 <li class="form-list__item form-list__item--checkbox">
                   <input class="form-list__checkbox visually-hidden" type="checkbox" name="selfie" id="selfie" checked>
@@ -104,7 +108,7 @@
           </div>
           <div class="form__field form__field--contacts form__field--light">
             <fieldset class="form__border">
-              <legend class="form__title form__title--contacts">Контактная информация</legend>
+              <legend align="center" class="form__title form__title--contacts">Контактная информация</legend>
               <div class="form__contacts-wrapper">
                 <p class="form__input form__input--contacts form__input--phone">
                   <label for="phone" class="form__label">Номер телефона</label>
@@ -119,7 +123,7 @@
           </div>
           <div class="form__field form__field--app form__field--dark">
             <fieldset class="form__border">
-              <legend class="form__title">С каким приложением путешествовали?</legend>
+              <legend align="center" class="form__title">С каким приложением путешествовали?</legend>
               <ul class="form__list form-list">
                 <li class="form-list__item form-list__item--radio">
                   <input class="form-list__radio visually-hidden" type="radio" name="app" id="ios" value="ios" checked>
@@ -138,7 +142,7 @@
           </div>
           <div class="form__field form__field--light form__field--textarea">
             <fieldset class="form__border form__border--textarea">
-              <legend class="form__title form__title--textarea">Опишите свои эмоции</legend>
+              <legend align="center" class="form__title form__title--textarea">Опишите свои эмоции</legend>
               <textarea class="form__textarea" name="emotions" id="emotions" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
           </div>
