@@ -4,9 +4,6 @@
 }
 
 .inner-page__title-container {
-  display: flex;
-  flex-direction: column;
-
   box-sizing: border-box;
 
   margin: 0 auto;
@@ -26,14 +23,6 @@
   }
 }
 
-.inner-page__wrapper {
-  align-items: center;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .inner-page__title {
   margin: 0;
   max-width: 280px; /* для IE */
@@ -47,8 +36,7 @@
 
 .inner-page__description-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
 
   box-sizing: border-box;
 
@@ -59,6 +47,12 @@
 
   &--low {
     min-height: 170px;
+  }
+
+  &::after {
+    content: "";
+    min-height: inherit;
+    font-size: 0;
   }
 }
 
