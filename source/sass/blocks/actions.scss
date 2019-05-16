@@ -209,6 +209,10 @@
       margin-bottom: 0;
     }
 
+    &::after {
+      background-repeat: no-repeat;
+    }
+
     &--crop::after {
       content: "";
 
@@ -241,14 +245,19 @@
       content: "";
 
       position: absolute;
-      top: 2px;
-      left: 4px;
+      top: 0;
+      left: 5px;
+
+      box-sizing: border-box;
 
       width: 16px;
       height: 16px;
+      border: 2px solid $main-color;
+      border-radius: 50%;
 
       background-image: url("../img/contrast-pink.svg");
-      background-size: 16px auto;
+      background-position: center center;
+      background-size: 18px 18px;
     }
   }
 
@@ -345,9 +354,10 @@
 
       width: 32px;
       height: 32px;
+      border-width: 4px;
 
-      background-repeat: no-repeat;
-      background-size: auto;
+      // background-repeat: no-repeat;
+      background-size: 32px 32px;
     }
   }
 
