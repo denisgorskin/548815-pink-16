@@ -42,11 +42,11 @@
 
   margin: 0 auto;
   padding: 20px;
-  min-height: 185px;
+  min-height: 145px;
   max-width: 320px;
 
   &--low {
-    min-height: 170px;
+    min-height: 90px;
   }
 
   &::after {
@@ -101,13 +101,15 @@
   }
 
   .inner-page__description-container {
+    // box-sizing: border-box;
+
     margin: 0 auto;
     padding: 20px 75px;
     max-width: 660px;
-    min-height: 228px;
+    min-height: 188px;
 
     &--low {
-      min-height: 252px;
+      min-height: 212px;
     }
   }
 
@@ -147,14 +149,14 @@
 
   .inner-page__description-container {
     max-width: 950px;
-    min-height: 240px;
+    min-height: 200px;
 
     &--short {
       max-width: 800px;
     }
 
     &--low {
-      min-height: 223px;
+      min-height: 183px;
     }
   }
 

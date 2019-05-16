@@ -68,7 +68,9 @@
   }
 }
 
-.form__input input[type="text"] {
+.form__input input[type="text"],
+.form__input input[type="tel"],
+.form__input input[type="email"] {
   display: block;
 
   box-sizing: border-box;
@@ -359,7 +361,8 @@
     margin-left: 18px;
   }
 
-  .form__input--contacts input[type="text"] {
+  .form__input--contacts input[type="tel"],
+  .form__input--contacts input[type="email"] {
     padding-right: 80px;
     height: 60px;
   }
